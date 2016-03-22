@@ -10,7 +10,7 @@ source:
   md5: 23c9a793959a54971b1f094b0c6d03b1
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -28,7 +28,7 @@ test:
 
 about:
   home: https://github.com/google/python-gflags
-  license: BSD
+  license: BSD 3-Clause
   summary: Google Commandline Flags Module for Python
 
 extra:
