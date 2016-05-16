@@ -3,9 +3,9 @@ About python-gflags
 
 Home: https://github.com/google/python-gflags
 
-Package license: BSD
+Package license: BSD 3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Google Commandline Flags Module for Python
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-gflags-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/python-gflags-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-gflags-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-gflags-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-gflags-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-gflags-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-gflags/badges/version.svg)](https://anaconda.org/conda-forge/python-gflags)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-gflags/badges/downloads.svg)](https://anaconda.org/conda-forge/python-gflags)
 
 
 Updating python-gflags-feedstock
