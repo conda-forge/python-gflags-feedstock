@@ -11,8 +11,12 @@ source:
   md5: e8e8c17833e4f30304893021f6004006
 
 build:
-  number: 0
-  script: python setup.py install
+  number: 1
+  script:
+    # Does not work anymore
+    # - python setup.py install --single-version-externally-managed --record record.txt
+    - python setup.py install
+    - rm -Rf $PREFIX/*.egg-info
 
 requirements:
   build:
