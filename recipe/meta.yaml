@@ -14,10 +14,7 @@ source:
 build:
   number: 0
   script:
-    # Does not work anymore
-    # - python setup.py install --single-version-externally-managed --record record.txt
     - python setup.py install
-    - rm -Rf $PREFIX/*.egg-info
 
 requirements:
   build:
