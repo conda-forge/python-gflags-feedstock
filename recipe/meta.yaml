@@ -1,25 +1,27 @@
-{% set version = "2.0" %}
+{% set name = "python-gflags" %}
+{% set version = "3.1.1" %}
+{% set md5 = "e8e8c17833e4f30304893021f6004006" %}
 
 package:
-  name: python-gflags
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: python-gflags-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/p/python-gflags/python-gflags-{{ version }}.tar.gz
-  md5: 23c9a793959a54971b1f094b0c6d03b1
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  md5: {{ md5 }}
 
 build:
-  number: 1
-  skip: True  # [py3k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script:
+    - python setup.py install
 
 requirements:
   build:
     - python
-    - setuptools
 
   run:
+    - six
     - python
 
 test:
@@ -34,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
+    - sdvillal
