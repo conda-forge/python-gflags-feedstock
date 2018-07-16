@@ -1,6 +1,6 @@
 {% set name = "python-gflags" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "aaff6449ca74320c709052e4664a52337832b2338f4a4267088564f3e98f6c63" %}
+{% set version = "3.1.2" %}
+{% set sha256 = "40ae131e899ef68e9e14aa53ca063839c34f6a168afe622217b5b875492a1ee2" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
