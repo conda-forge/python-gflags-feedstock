@@ -17,7 +17,7 @@ build:
     - python setup.py install
 
 requirements:
-  build:
+  host:
     - python
 
   run:
