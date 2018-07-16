@@ -1,6 +1,6 @@
 {% set name = "python-gflags" %}
 {% set version = "3.1.1" %}
-{% set md5 = "e8e8c17833e4f30304893021f6004006" %}
+{% set sha256 = "aaff6449ca74320c709052e4664a52337832b2338f4a4267088564f3e98f6c63" %}
 
 package:
   name: {{ name }}
@@ -9,16 +9,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: {{ md5 }}
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script:
-    - python setup.py install
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
+    - pip
 
   run:
     - six
@@ -31,6 +32,7 @@ test:
 about:
   home: https://github.com/google/python-gflags
   license: BSD 3-Clause
+  license_file: COPYING
   summary: Google Commandline Flags Module for Python
 
 extra:
